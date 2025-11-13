@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Investor relations for {{COOPERATIVE_NAME}} - financial reports, performance data, and investment opportunities.">
+    <meta name="keywords" content="investor relations, mining investment, financial reports, shareholder information">
+    
+    <title>{{COOPERATIVE_NAME}} - Investors | Investment Opportunities</title>
+    
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/placeholder-logo.png">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder" aria-label="Logo {{COOPERATIVE_NAME}}">
+                    <img src="{{LOGO_FILE_or_PLACEHOLDER}}" 
+                         alt="{{COOPERATIVE_NAME}} Logo" 
+                         onerror="this.outerHTML='<div class=\'logo-fallback\'>{{COOPERATIVE_NAME}}</div>';">
+                </div>
+                <h1 class="site-name">{{COOPERATIVE_NAME}}</h1>
+            </div>
+            
+            <div class="language-switcher" role="navigation" aria-label="Language selection">
+                <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+                <button class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+                <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-pt="Início" data-es="Inicio">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-en="About Us" data-pt="Sobre Nós" data-es="Sobre Nosotros">About Us</a></li>
+                    <li><a href="products.html" class="nav-link" data-en="Products" data-pt="Produtos" data-es="Productos">Products</a></li>
+                    <li><a href="investors.html" class="nav-link active" data-en="Investors" data-pt="Investidores" data-es="Inversores">Investors</a></li>
+                    <li><a href="sustainability.html" class="nav-link" data-en="Sustainability" data-pt="Sustentabilidade" data-es="Sostenibilidad">Sustainability</a></li>
+                    <li><a href="news.html" class="nav-link" data-en="News" data-pt="Notícias" data-es="Noticias">News</a></li>
+                    <li><a href="contact.html" class="nav-link" data-en="Contact" data-pt="Contato" data-es="Contacto">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-bar" role="search">
+                <input type="search" class="search-input" placeholder="Search..." aria-label="Search website">
+                <button class="search-btn" aria-label="Submit search">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-en="Investor Relations" data-pt="Relações com Investidores" data-es="Relaciones con Inversores">Investor Relations</h1>
+            <p class="page-subtitle" data-en="Transparent reporting and sustainable growth for our stakeholders" data-pt="Relatórios transparentes e crescimento sustentável para nossos stakeholders" data-es="Informes transparentes y crecimiento sostenible para nuestros grupos de interés">Transparent reporting and sustainable growth for our stakeholders</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <!-- Key Financial Highlights -->
+        <section class="section section-financials">
+            <div class="container">
+                <h2 class="section-title" data-en="Financial Highlights 2024" data-pt="Destaques Financeiros 2024" data-es="Aspectos Financieros Destacados 2024">Financial Highlights 2024</h2>
+                
+                <div class="financials-grid">
+                    <div class="financial-card">
+                        <div class="financial-icon" style="background: linear-gradient(135deg, #B8860B 0%, #8B6914 100%);">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 40V16l16-12 16 12v24H28V28h-8v12H8z" stroke="white" stroke-width="2.5" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="financial-amount" data-en="$2.4B" data-pt="$2,4B" data-es="$2,4B">$2.4B</div>
+                        <div class="financial-label" data-en="Revenue" data-pt="Receita" data-es="Ingresos">Revenue</div>
+                        <div class="financial-change positive" data-en="+12% YoY" data-pt="+12% A/A" data-es="+12% A/A">+12% YoY</div>
+                    </div>
+                    
+                    <div class="financial-card">
+                        <div class="financial-icon" style="background: linear-gradient(135deg, #4A6272 0%, #2F3E4F 100%);">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 36V12h40v24H4z" stroke="white" stroke-width="2.5" fill="none"/>
+                                <path d="M12 20l8 8 16-16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="financial-amount" data-en="$580M" data-pt="$580M" data-es="$580M">$580M</div>
+                        <div class="financial-label" data-en="EBITDA" data-pt="EBITDA" data-es="EBITDA">EBITDA</div>
+                        <div class="financial-change positive" data-en="+18% YoY" data-pt="+18% A/A" data-es="+18% A/A">+18% YoY</div>
+                    </div>
+                    
+                    <div class="financial-card">
+                        <div class="financial-icon" style="background: linear-gradient(135deg, #6B7A5C 0%, #4A5D3F 100%);">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 28l8-8 8 8 16-16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="24" cy="28" r="2" fill="white"/>
+                                <circle cx="16" cy="20" r="2" fill="white"/>
+                                <circle cx="40" cy="12" r="2" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="financial-amount" data-en="24.2%" data-pt="24,2%" data-es="24,2%">24.2%</div>
+                        <div class="financial-label" data-en="EBITDA Margin" data-pt="Margem EBITDA" data-es="Margen EBITDA">EBITDA Margin</div>
+                        <div class="financial-change positive" data-en="+1.2pp" data-pt="+1,2pp" data-es="+1,2pp">+1.2pp</div>
+                    </div>
+                    
+                    <div class="financial-card">
+                        <div class="financial-icon" style="background: linear-gradient(135deg, #8B7355 0%, #6B563F 100%);">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="16" stroke="white" stroke-width="2.5" fill="none"/>
+                                <path d="M24 16v8l6 6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="financial-amount" data-en="$1.85" data-pt="$1,85" data-es="$1,85">$1.85</div>
+                        <div class="financial-label" data-en="Dividend per Share" data-pt="Dividendo por Ação" data-es="Dividendo por Acción">Dividend per Share</div>
+                        <div class="financial-change positive" data-en="+8% YoY" data-pt="+8% A/A" data-es="+8% A/A">+8% YoY</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Thesis -->
+        <section class="section section-investment">
+            <div class="container">
+                <h2 class="section-title" data-en="Why Invest in {{COOPERATIVE_NAME}}?" data-pt="Por Que Investir na {{COOPERATIVE_NAME}}?" data-es="¿Por Qué Invertir en {{COOPERATIVE_NAME}}?">Why Invest in {{COOPERATIVE_NAME}}?</h2>
+                
+                <div class="investment-grid">
+                    <div class="investment-item">
+                        <div class="investment-number">01</div>
+                        <h3 data-en="Proven Track Record" data-pt="Histórico Comprovado" data-es="Historial Comprobado">Proven Track Record</h3>
+                        <p data-en="25+ years of consistent financial performance and dividend payments to our cooperative members and investors." data-pt="Mais de 25 anos de desempenho financeiro consistente e pagamento de dividendos aos nossos membros cooperados e investidores." data-es="Más de 25 años de rendimiento financiero consistente y pagos de dividendos a nuestros miembros cooperativos e inversores.">25+ years of consistent financial performance and dividend payments to our cooperative members and investors.</p>
+                    </div>
+                    
+                    <div class="investment-item">
+                        <div class="investment-number">02</div>
+                        <h3 data-en="Diversified Portfolio" data-pt="Portfólio Diversificado" data-es="Cartera Diversificada">Diversified Portfolio</h3>
+                        <p data-en="Multi-commodity production reduces risk and provides stable returns across market cycles." data-pt="Produção multi-commodities reduz riscos e fornece retornos estáveis através dos ciclos de mercado." data-es="La producción de múltiples materias primas reduce el riesgo y proporciona rendimientos estables a través de los ciclos del mercado.">Multi-commodity production reduces risk and provides stable returns across market cycles.</p>
+                    </div>
+                    
+                    <div class="investment-item">
+                        <div class="investment-number">03</div>
+                        <h3 data-en="Growth Potential" data-pt="Potencial de Crescimento" data-es="Potencial de Crecimiento">Growth Potential</h3>
+                        <p data-en="Strategic expansion projects and increasing demand for critical minerals position us for long-term growth." data-pt="Projetos de expansão estratégica e demanda crescente por minerais críticos nos posicionam para crescimento a longo prazo." data-es="Proyectos de expansión estratégica y demanda creciente de minerales críticos nos posicionan para un crecimiento a largo plazo.">Strategic expansion projects and increasing demand for critical minerals position us for long-term growth.</p>
+                    </div>
+                    
+                    <div class="investment-item">
+                        <div class="investment-number">04</div>
+                        <h3 data-en="ESG Leadership" data-pt="Liderança em ESG" data-es="Liderazgo en ESG">ESG Leadership</h3>
+                        <p data-en="Strong environmental, social, and governance practices make us a responsible investment choice." data-pt="Fortes práticas ambientais, sociais e de governança nos tornam uma escolha de investimento responsável." data-es="Fuertes prácticas ambientales, sociales y de gobernanza nos convierten en una opción de inversión responsable.">Strong environmental, social, and governance practices make us a responsible investment choice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reports and Documents -->
+        <section class="section section-investor-reports">
+            <div class="container">
+                <h2 class="section-title" data-en="Financial Reports & Documents" data-pt="Relatórios Financeiros e Documentos" data-es="Informes Financieros y Documentos">Financial Reports & Documents</h2>
+                
+                <div class="report-categories">
+                    <div class="report-category">
+                        <h3 class="category-title" data-en="Annual Reports" data-pt="Relatórios Anuais" data-es="Informes Anuales">Annual Reports</h3>
+                        <ul class="report-list">
+                            <li>
+                                <a href="./assets/reports/financial-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Annual Report 2024" data-pt="Relatório Anual 2024" data-es="Informe Anual 2024">Annual Report 2024</span>
+                                    <span class="report-meta">PDF • 3.2 MB</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/reports/financial-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Annual Report 2023" data-pt="Relatório Anual 2023" data-es="Informe Anual 2023">Annual Report 2023</span>
+                                    <span class="report-meta">PDF • 2.8 MB</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/reports/financial-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Annual Report 2022" data-pt="Relatório Anual 2022" data-es="Informe Anual 2022">Annual Report 2022</span>
+                                    <span class="report-meta">PDF • 2.5 MB</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="report-category">
+                        <h3 class="category-title" data-en="Quarterly Results" data-pt="Resultados Trimestrais" data-es="Resultados Trimestrales">Quarterly Results</h3>
+                        <ul class="report-list">
+                            <li>
+                                <a href="./assets/reports/financial-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Q3 2024 Results" data-pt="Resultados T3 2024" data-es="Resultados T3 2024">Q3 2024 Results</span>
+                                    <span class="report-meta">PDF • 1.2 MB</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/reports/financial-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Q2 2024 Results" data-pt="Resultados T2 2024" data-es="Resultados T2 2024">Q2 2024 Results</span>
+                                    <span class="report-meta">PDF • 1.1 MB</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/reports/financial-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Q1 2024 Results" data-pt="Resultados T1 2024" data-es="Resultados T1 2024">Q1 2024 Results</span>
+                                    <span class="report-meta">PDF • 1.0 MB</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="report-category">
+                        <h3 class="category-title" data-en="Presentations" data-pt="Apresentações" data-es="Presentaciones">Presentations</h3>
+                        <ul class="report-list">
+                            <li>
+                                <a href="./assets/reports/financial-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Investor Presentation 2024" data-pt="Apresentação para Investidores 2024" data-es="Presentación para Inversores 2024">Investor Presentation 2024</span>
+                                    <span class="report-meta">PDF • 5.4 MB</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/reports/financial-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Corporate Overview" data-pt="Visão Geral Corporativa" data-es="Descripción Corporativa">Corporate Overview</span>
+                                    <span class="report-meta">PDF • 3.8 MB</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="report-category">
+                        <h3 class="category-title" data-en="ESG Reports" data-pt="Relatórios ESG" data-es="Informes ESG">ESG Reports</h3>
+                        <ul class="report-list">
+                            <li>
+                                <a href="./assets/reports/environmental-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Sustainability Report 2024" data-pt="Relatório de Sustentabilidade 2024" data-es="Informe de Sostenibilidad 2024">Sustainability Report 2024</span>
+                                    <span class="report-meta">PDF • 4.1 MB</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/reports/social-report.pdf" class="report-link" download>
+                                    <span class="report-name" data-en="Social Responsibility Report 2024" data-pt="Relatório de Responsabilidade Social 2024" data-es="Informe de Responsabilidad Social 2024">Social Responsibility Report 2024</span>
+                                    <span class="report-meta">PDF • 2.9 MB</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stock Performance Chart Placeholder -->
+        <section class="section section-performance">
+            <div class="container">
+                <h2 class="section-title" data-en="Share Performance" data-pt="Desempenho das Ações" data-es="Rendimiento de Acciones">Share Performance</h2>
+                
+                <div class="chart-container">
+                    <div class="chart-placeholder" style="background: linear-gradient(135deg, #4A6272 0%, #2F3E4F 100%); height: 400px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white;">
+                        <div style="text-align: center;">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 60l15-15 15 15 30-30" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p style="margin-top: 16px;" data-en="Interactive chart showing 5-year performance" data-pt="Gráfico interativo mostrando desempenho de 5 anos" data-es="Gráfico interactivo que muestra el rendimiento de 5 años">Interactive chart showing 5-year performance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stock-info-grid">
+                        <div class="stock-info-item">
+                            <span class="stock-label" data-en="Current Price" data-pt="Preço Atual" data-es="Precio Actual">Current Price</span>
+                            <span class="stock-value">$42.85</span>
+                        </div>
+                        <div class="stock-info-item">
+                            <span class="stock-label" data-en="52-Week High" data-pt="Máxima de 52 Semanas" data-es="Máximo de 52 Semanas">52-Week High</span>
+                            <span class="stock-value">$48.20</span>
+                        </div>
+                        <div class="stock-info-item">
+                            <span class="stock-label" data-en="52-Week Low" data-pt="Mínima de 52 Semanas" data-es="Mínimo de 52 Semanas">52-Week Low</span>
+                            <span class="stock-value">$35.10</span>
+                        </div>
+                        <div class="stock-info-item">
+                            <span class="stock-label" data-en="Market Cap" data-pt="Valor de Mercado" data-es="Capitalización de Mercado">Market Cap</span>
+                            <span class="stock-value">$3.2B</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Corporate Governance -->
+        <section class="section section-governance">
+            <div class="container">
+                <h2 class="section-title" data-en="Corporate Governance" data-pt="Governança Corporativa" data-es="Gobernanza Corporativa">Corporate Governance</h2>
+                
+                <div class="governance-content">
+                    <p data-en="{{COOPERATIVE_NAME}} is committed to the highest standards of corporate governance, transparency, and ethical business practices. Our governance framework ensures accountability to all stakeholders and supports long-term value creation." data-pt="{{COOPERATIVE_NAME}} está comprometida com os mais altos padrões de governança corporativa, transparência e práticas empresariais éticas. Nossa estrutura de governança garante responsabilidade para todos os stakeholders e suporta criação de valor a longo prazo." data-es="{{COOPERATIVE_NAME}} está comprometida con los más altos estándares de gobernanza corporativa, transparencia y prácticas empresariales éticas. Nuestro marco de gobernanza garantiza la responsabilidad ante todos los grupos de interés y respalda la creación de valor a largo plazo.">{{COOPERATIVE_NAME}} is committed to the highest standards of corporate governance, transparency, and ethical business practices. Our governance framework ensures accountability to all stakeholders and supports long-term value creation.</p>
+                    
+                    <div class="governance-grid">
+                        <div class="governance-item">
+                            <h3 data-en="Board Composition" data-pt="Composição do Conselho" data-es="Composición del Consejo">Board Composition</h3>
+                            <ul>
+                                <li data-en="9 board members" data-pt="9 membros do conselho" data-es="9 miembros del consejo">9 board members</li>
+                                <li data-en="6 independent directors" data-pt="6 diretores independentes" data-es="6 directores independientes">6 independent directors</li>
+                                <li data-en="44% gender diversity" data-pt="44% diversidade de gênero" data-es="44% diversidad de género">44% gender diversity</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="governance-item">
+                            <h3 data-en="Board Committees" data-pt="Comitês do Conselho" data-es="Comités del Consejo">Board Committees</h3>
+                            <ul>
+                                <li data-en="Audit Committee" data-pt="Comitê de Auditoria" data-es="Comité de Auditoría">Audit Committee</li>
+                                <li data-en="Remuneration Committee" data-pt="Comitê de Remuneração" data-es="Comité de Remuneración">Remuneration Committee</li>
+                                <li data-en="Sustainability Committee" data-pt="Comitê de Sustentabilidade" data-es="Comité de Sostenibilidad">Sustainability Committee</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="governance-item">
+                            <h3 data-en="Policies & Codes" data-pt="Políticas e Códigos" data-es="Políticas y Códigos">Policies & Codes</h3>
+                            <ul>
+                                <li><a href="#" data-en="Code of Conduct" data-pt="Código de Conduta" data-es="Código de Conducta">Code of Conduct</a></li>
+                                <li><a href="#" data-en="Anti-Corruption Policy" data-pt="Política Anticorrupção" data-es="Política Anticorrupción">Anti-Corruption Policy</a></li>
+                                <li><a href="#" data-en="Whistleblower Policy" data-pt="Política de Denúncias" data-es="Política de Denuncia">Whistleblower Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investor Contact -->
+        <section class="section section-investor-contact">
+            <div class="container">
+                <h2 class="section-title" data-en="Investor Relations Contact" data-pt="Contato de Relações com Investidores" data-es="Contacto de Relaciones con Inversores">Investor Relations Contact</h2>
+                
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <h3 data-en="General Inquiries" data-pt="Consultas Gerais" data-es="Consultas Generales">General Inquiries</h3>
+                        <p><strong data-en="Email:" data-pt="E-mail:" data-es="Correo:">Email:</strong> <a href="mailto:investors@{{COOPERATIVE_NAME}}.com">investors@{{COOPERATIVE_NAME}}.com</a></p>
+                        <p><strong data-en="Phone:" data-pt="Telefone:" data-es="Teléfono:">Phone:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3 data-en="IR Department" data-pt="Departamento de RI" data-es="Departamento de RI">IR Department</h3>
+                        <p><strong>Sarah Johnson</strong></p>
+                        <p data-en="Head of Investor Relations" data-pt="Chefe de Relações com Investidores" data-es="Jefa de Relaciones con Inversores">Head of Investor Relations</p>
+                        <p><a href="mailto:s.johnson@{{COOPERATIVE_NAME}}.com">s.johnson@{{COOPERATIVE_NAME}}.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section section-cta">
+            <div class="container">
+                <h2 class="cta-title" data-en="Join Our Investment Community" data-pt="Junte-se à Nossa Comunidade de Investidores" data-es="Únase a Nuestra Comunidad de Inversores">Join Our Investment Community</h2>
+                <p class="cta-description" data-en="Get exclusive updates, reports, and insights delivered to your inbox" data-pt="Receba atualizações exclusivas, relatórios e insights em sua caixa de entrada" data-es="Reciba actualizaciones exclusivas, informes e información en su bandeja de entrada">Get exclusive updates, reports, and insights delivered to your inbox</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large" data-en="Contact Investor Relations" data-pt="Contatar Relações com Investidores" data-es="Contactar Relaciones con Inversores">Contact Investor Relations</a>
+                    <a href="#newsletter-form" class="btn btn-secondary btn-large" data-en="Subscribe to Updates" data-pt="Assinar Atualizações" data-es="Suscribirse a Actualizaciones">Subscribe to Updates</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">{{COOPERATIVE_NAME}}</h3>
+                    <p class="footer-text">Leading mining cooperative committed to sustainable practices and responsible resource extraction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">For Investors</h3>
+                    <ul class="footer-links">
+                        <li><a href="investors.html">Investor Relations</a></li>
+                        <li><a href="./assets/reports/financial-report.pdf">Financial Reports</a></li>
+                        <li><a href="./assets/reports/environmental-report.pdf">Environmental Reports</a></li>
+                        <li><a href="./assets/reports/social-report.pdf">Social Reports</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor"/>
+                            </svg>
+                            <span>{{ADDRESS}}<br>City, Country, ZIP</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2v16c0 1.1 0.9 2 2 2h16c1.1 0 2-0.9 2-2V2c0-1.1-0.9-2-2-2zM6 3l3 2v2l-3-2V3zm8 14H6v-1h8v1zm0-3H6v-1h8v1zm0-3h-5V9l5 3v-1z" fill="currentColor"/>
+                            </svg>
+                            <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2v16c0 1.1 0.9 2 2 2h16c1.1 0 2-0.9 2-2V2c0-1.1-0.9-2-2-2zM6.5 17.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM13.5 17.5c-3.6 0-6.5-2.9-6.5-6.5h2c0 2.5 2 4.5 4.5 4.5s4.5-2 4.5-4.5h2c0 3.6-2.9 6.5-6.5 6.5z" fill="currentColor"/>
+                            </svg>
+                            <a href="tel:{{PHONE}}">{{PHONE}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 {{COOPERATIVE_NAME}}. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

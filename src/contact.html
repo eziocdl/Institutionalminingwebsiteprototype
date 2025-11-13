@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact {{COOPERATIVE_NAME}} - Get in touch with our team for inquiries, partnerships, and more.">
+    <meta name="keywords" content="contact, get in touch, inquiries, {{COOPERATIVE_NAME}} contact">
+    
+    <title>{{COOPERATIVE_NAME}} - Contact Us | Get in Touch</title>
+    
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/placeholder-logo.png">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-placeholder" aria-label="Logo {{COOPERATIVE_NAME}}">
+                    <img src="{{LOGO_FILE_or_PLACEHOLDER}}" 
+                         alt="{{COOPERATIVE_NAME}} Logo" 
+                         onerror="this.outerHTML='<div class=\'logo-fallback\'>{{COOPERATIVE_NAME}}</div>';">
+                </div>
+                <h1 class="site-name">{{COOPERATIVE_NAME}}</h1>
+            </div>
+            
+            <div class="language-switcher" role="navigation" aria-label="Language selection">
+                <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+                <button class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+                <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-en="Home" data-pt="Início" data-es="Inicio">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-en="About Us" data-pt="Sobre Nós" data-es="Sobre Nosotros">About Us</a></li>
+                    <li><a href="products.html" class="nav-link" data-en="Products" data-pt="Produtos" data-es="Productos">Products</a></li>
+                    <li><a href="investors.html" class="nav-link" data-en="Investors" data-pt="Investidores" data-es="Inversores">Investors</a></li>
+                    <li><a href="sustainability.html" class="nav-link" data-en="Sustainability" data-pt="Sustentabilidade" data-es="Sostenibilidad">Sustainability</a></li>
+                    <li><a href="news.html" class="nav-link" data-en="News" data-pt="Notícias" data-es="Noticias">News</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-en="Contact" data-pt="Contato" data-es="Contacto">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-bar" role="search">
+                <input type="search" class="search-input" placeholder="Search..." aria-label="Search website">
+                <button class="search-btn" aria-label="Submit search">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-en="Contact Us" data-pt="Entre em Contato" data-es="Contáctenos">Contact Us</h1>
+            <p class="page-subtitle" data-en="Get in touch with our team - we're here to help" data-pt="Entre em contato com nossa equipe - estamos aqui para ajudar" data-es="Póngase en contacto con nuestro equipo - estamos aquí para ayudar">Get in touch with our team - we're here to help</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <!-- Contact Form & Info -->
+        <section class="section section-contact">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2 data-en="Send Us a Message" data-pt="Envie-nos uma Mensagem" data-es="Envíenos un Mensaje">Send Us a Message</h2>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" data-en="Full Name *" data-pt="Nome Completo *" data-es="Nombre Completo *">Full Name *</label>
+                                    <input type="text" 
+                                           id="name" 
+                                           name="name" 
+                                           class="form-input" 
+                                           required
+                                           data-en-placeholder="John Doe"
+                                           data-pt-placeholder="João Silva"
+                                           data-es-placeholder="Juan García"
+                                           placeholder="John Doe">
+                                    <span class="form-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" data-en="Email Address *" data-pt="Endereço de E-mail *" data-es="Dirección de Correo *">Email Address *</label>
+                                    <input type="email" 
+                                           id="email" 
+                                           name="email" 
+                                           class="form-input" 
+                                           required
+                                           data-en-placeholder="john@example.com"
+                                           data-pt-placeholder="joao@exemplo.com"
+                                           data-es-placeholder="juan@ejemplo.com"
+                                           placeholder="john@example.com">
+                                    <span class="form-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone" data-en="Phone Number" data-pt="Número de Telefone" data-es="Número de Teléfono">Phone Number</label>
+                                    <input type="tel" 
+                                           id="phone" 
+                                           name="phone" 
+                                           class="form-input"
+                                           data-en-placeholder="+1 (555) 123-4567"
+                                           data-pt-placeholder="+55 (11) 1234-5678"
+                                           data-es-placeholder="+34 912 345 678"
+                                           placeholder="+1 (555) 123-4567">
+                                    <span class="form-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="company" data-en="Company/Organization" data-pt="Empresa/Organização" data-es="Empresa/Organización">Company/Organization</label>
+                                    <input type="text" 
+                                           id="company" 
+                                           name="company" 
+                                           class="form-input"
+                                           data-en-placeholder="Company Name"
+                                           data-pt-placeholder="Nome da Empresa"
+                                           data-es-placeholder="Nombre de la Empresa"
+                                           placeholder="Company Name">
+                                    <span class="form-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" data-en="Subject *" data-pt="Assunto *" data-es="Asunto *">Subject *</label>
+                                <select id="subject" 
+                                        name="subject" 
+                                        class="form-input" 
+                                        required>
+                                    <option value="" data-en="Select a subject..." data-pt="Selecione um assunto..." data-es="Seleccione un asunto...">Select a subject...</option>
+                                    <option value="general" data-en="General Inquiry" data-pt="Consulta Geral" data-es="Consulta General">General Inquiry</option>
+                                    <option value="sales" data-en="Sales & Products" data-pt="Vendas e Produtos" data-es="Ventas y Productos">Sales & Products</option>
+                                    <option value="investor" data-en="Investor Relations" data-pt="Relações com Investidores" data-es="Relaciones con Inversores">Investor Relations</option>
+                                    <option value="partnership" data-en="Partnership Opportunities" data-pt="Oportunidades de Parceria" data-es="Oportunidades de Asociación">Partnership Opportunities</option>
+                                    <option value="press" data-en="Media & Press" data-pt="Mídia e Imprensa" data-es="Medios y Prensa">Media & Press</option>
+                                    <option value="sustainability" data-en="Sustainability" data-pt="Sustentabilidade" data-es="Sostenibilidad">Sustainability</option>
+                                    <option value="other" data-en="Other" data-pt="Outro" data-es="Otro">Other</option>
+                                </select>
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" data-en="Message *" data-pt="Mensagem *" data-es="Mensaje *">Message *</label>
+                                <textarea id="message" 
+                                          name="message" 
+                                          class="form-input" 
+                                          rows="6" 
+                                          required
+                                          data-en-placeholder="Tell us how we can help..."
+                                          data-pt-placeholder="Conte-nos como podemos ajudar..."
+                                          data-es-placeholder="Cuéntenos cómo podemos ayudar..."
+                                          placeholder="Tell us how we can help..."></textarea>
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span data-en="I agree to the Privacy Policy and Terms of Service *" data-pt="Concordo com a Política de Privacidade e Termos de Serviço *" data-es="Acepto la Política de Privacidad y los Términos de Servicio *">I agree to the Privacy Policy and Terms of Service *</span>
+                                </label>
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large" data-en="Send Message" data-pt="Enviar Mensagem" data-es="Enviar Mensaje">Send Message</button>
+                        </form>
+                        
+                        <div id="form-success-message" class="success-message" style="display: none;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p data-en="Thank you for your message! We'll get back to you soon." data-pt="Obrigado pela sua mensagem! Entraremos em contato em breve." data-es="¡Gracias por su mensaje! Nos pondremos en contacto pronto.">Thank you for your message! We'll get back to you soon.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info-container">
+                        <h2 data-en="Contact Information" data-pt="Informações de Contato" data-es="Información de Contacto">Contact Information</h2>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 2C10.48 2 6 6.48 6 12c0 8.4 10 18 10 18s10-9.6 10-18c0-5.52-4.48-10-10-10zm0 13.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3 data-en="Head Office" data-pt="Sede Principal" data-es="Sede Principal">Head Office</h3>
+                            <p>{{ADDRESS}}<br>City, State/Province<br>Country, ZIP Code</p>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28 4H4C2.9 4 2 4.9 2 6v20c0 1.1.9 2 2 2h24c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 6l-12 7.5L4 10V6l12 7.5L28 6v4z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3 data-en="Email" data-pt="E-mail" data-es="Correo">Email</h3>
+                            <p>
+                                <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
+                                <span data-en="General Inquiries:" data-pt="Consultas Gerais:" data-es="Consultas Generales:">General Inquiries:</span> <a href="mailto:info@{{COOPERATIVE_NAME}}.com">info@{{COOPERATIVE_NAME}}.com</a><br>
+                                <span data-en="Sales:" data-pt="Vendas:" data-es="Ventas:">Sales:</span> <a href="mailto:sales@{{COOPERATIVE_NAME}}.com">sales@{{COOPERATIVE_NAME}}.com</a>
+                            </p>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 4C6.9 4 6 4.9 6 6v20c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H8zm8 22c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3 data-en="Phone" data-pt="Telefone" data-es="Teléfono">Phone</h3>
+                            <p>
+                                <span data-en="Main:" data-pt="Principal:" data-es="Principal:">Main:</span> <a href="tel:{{PHONE}}">{{PHONE}}</a><br>
+                                <span data-en="Investor Relations:" data-pt="Relações com Investidores:" data-es="Relaciones con Inversores:">Investor Relations:</span> <a href="tel:+15551234567">+1 (555) 123-4567</a><br>
+                                <span data-en="Media Inquiries:" data-pt="Consultas de Mídia:" data-es="Consultas de Medios:">Media Inquiries:</span> <a href="tel:+15551234568">+1 (555) 123-4568</a>
+                            </p>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <path d="M16 8v8l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3 data-en="Business Hours" data-pt="Horário Comercial" data-es="Horario Comercial">Business Hours</h3>
+                            <p>
+                                <span data-en="Monday - Friday:" data-pt="Segunda - Sexta:" data-es="Lunes - Viernes:">Monday - Friday:</span> 8:00 AM - 6:00 PM<br>
+                                <span data-en="Saturday:" data-pt="Sábado:" data-es="Sábado:">Saturday:</span> 9:00 AM - 1:00 PM<br>
+                                <span data-en="Sunday:" data-pt="Domingo:" data-es="Domingo:">Sunday:</span> <span data-en="Closed" data-pt="Fechado" data-es="Cerrado">Closed</span>
+                            </p>
+                        </div>
+                        
+                        <div class="social-connect">
+                            <h3 data-en="Follow Us" data-pt="Siga-nos" data-es="Síguenos">Follow Us</h3>
+                            <div class="social-links-large">
+                                <a href="#" class="social-link-large" aria-label="LinkedIn">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M25.333 0h-18.666c-3.682 0-6.667 2.985-6.667 6.667v18.666c0 3.682 2.985 6.667 6.667 6.667h18.666c3.682 0 6.667-2.985 6.667-6.667v-18.666c0-3.682-2.985-6.667-6.667-6.667zm-14.666 25.333h-4v-14.666h4v14.666zm-2-16.666c-1.288 0-2.333-1.053-2.333-2.352s1.045-2.352 2.333-2.352 2.333 1.053 2.333 2.352-1.045 2.352-2.333 2.352zm18 16.666h-4v-7.472c0-4.491-5.333-4.151-5.333 0v7.472h-4v-14.666h4v2.353c1.861-3.448 9.333-3.703 9.333 3.301v9.012z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link-large" aria-label="Twitter">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M30.667 4a14.533 14.533 0 0 1-4.187 2.04 6.4 6.4 0 0 0-10.48 4v1.333A14.88 14.88 0 0 1 4 5.333s-5.333 12 6.667 17.334a15.52 15.52 0 0 1-9.334 2.666c12 6.667 26.667 0 26.667-15.333a6 6 0 0 0-.107-1.107A10.293 10.293 0 0 0 30.667 4z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link-large" aria-label="Facebook">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M32 16.097c0-8.836-7.164-16-16-16s-16 7.164-16 16c0 7.987 5.851 14.605 13.5 15.805v-11.18h-4.062v-4.625h4.062v-3.627c0-4.009 2.389-6.225 6.043-6.225 1.75 0 3.581.312 3.581.312v3.937h-2.017c-1.987 0-2.607 1.233-2.607 2.498v3.005h4.438l-.71 4.625h-3.728v11.18c7.649-1.2 13.5-7.818 13.5-15.805z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section section-map">
+            <div class="container">
+                <h2 class="section-title" data-en="Our Locations" data-pt="Nossas Localizações" data-es="Nuestras Ubicaciones">Our Locations</h2>
+                <div class="map-placeholder">
+                    <div class="map-overlay">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 10C30.05 10 22 18.05 22 28c0 15 18 32 18 32s18-17 18-32c0-9.95-8.05-18-18-18zm0 24.5c-3.58 0-6.5-2.92-6.5-6.5s2.92-6.5 6.5-6.5 6.5 2.92 6.5 6.5-2.92 6.5-6.5 6.5z" fill="white"/>
+                        </svg>
+                        <p data-en="Interactive map showing our global locations" data-pt="Mapa interativo mostrando nossas localizações globais" data-es="Mapa interactivo que muestra nuestras ubicaciones globales">Interactive map showing our global locations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regional Offices -->
+        <section class="section section-offices">
+            <div class="container">
+                <h2 class="section-title" data-en="Regional Offices" data-pt="Escritórios Regionais" data-es="Oficinas Regionales">Regional Offices</h2>
+                
+                <div class="offices-grid">
+                    <div class="office-card">
+                        <h3 data-en="North America" data-pt="América do Norte" data-es="América del Norte">North America</h3>
+                        <p><strong>United States</strong><br>
+                        123 Mining Boulevard<br>
+                        Denver, CO 80202<br>
+                        <a href="tel:+13035551234">+1 (303) 555-1234</a></p>
+                    </div>
+                    
+                    <div class="office-card">
+                        <h3 data-en="South America" data-pt="América do Sul" data-es="América del Sur">South America</h3>
+                        <p><strong data-en="Brazil" data-pt="Brasil" data-es="Brasil">Brazil</strong><br>
+                        Av. Paulista, 1000<br>
+                        São Paulo, SP 01310-100<br>
+                        <a href="tel:+551133334444">+55 (11) 3333-4444</a></p>
+                    </div>
+                    
+                    <div class="office-card">
+                        <h3 data-en="Europe" data-pt="Europa" data-es="Europa">Europe</h3>
+                        <p><strong data-en="United Kingdom" data-pt="Reino Unido" data-es="Reino Unido">United Kingdom</strong><br>
+                        10 Mining Street<br>
+                        London EC1A 2BN<br>
+                        <a href="tel:+442012345678">+44 20 1234 5678</a></p>
+                    </div>
+                    
+                    <div class="office-card">
+                        <h3 data-en="Asia Pacific" data-pt="Ásia-Pacífico" data-es="Asia-Pacífico">Asia Pacific</h3>
+                        <p><strong data-en="Australia" data-pt="Austrália" data-es="Australia">Australia</strong><br>
+                        45 Resources Road<br>
+                        Perth, WA 6000<br>
+                        <a href="tel:+61892345678">+61 8 9234 5678</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">{{COOPERATIVE_NAME}}</h3>
+                    <p class="footer-text">Leading mining cooperative committed to sustainable practices and responsible resource extraction.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">For Investors</h3>
+                    <ul class="footer-links">
+                        <li><a href="investors.html">Investor Relations</a></li>
+                        <li><a href="./assets/reports/financial-report.pdf">Financial Reports</a></li>
+                        <li><a href="./assets/reports/environmental-report.pdf">Environmental Reports</a></li>
+                        <li><a href="./assets/reports/social-report.pdf">Social Reports</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor"/>
+                            </svg>
+                            <span>{{ADDRESS}}<br>City, Country, ZIP</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2v16c0 1.1 0.9 2 2 2h16c1.1 0 2-0.9 2-2V2c0-1.1-0.9-2-2-2zM6 3l3 2v2l-3-2V3zm8 14H6v-1h8v1zm0-3H6v-1h8v1zm0-3h-5V9l5 3v-1z" fill="currentColor"/>
+                            </svg>
+                            <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2v16c0 1.1 0.9 2 2 2h16c1.1 0 2-0.9 2-2V2c0-1.1-0.9-2-2-2zM6.5 17.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM13.5 17.5c-3.6 0-6.5-2.9-6.5-6.5h2c0 2.5 2 4.5 4.5 4.5s4.5-2 4.5-4.5h2c0 3.6-2.9 6.5-6.5 6.5z" fill="currentColor"/>
+                            </svg>
+                            <a href="tel:{{PHONE}}">{{PHONE}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 {{COOPERATIVE_NAME}}. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
